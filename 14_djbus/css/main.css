@@ -1,0 +1,420 @@
+@import url(default.css);
+
+header { /* header영역은 대부분 높이를 입력함 */
+    height: 100px;
+}
+header h1 {
+    float: left;
+    margin: 23px 0 0 0;
+}
+header .gnb {
+    float: right;
+    margin: 18px 0 0 0;
+}
+header .gnb button {
+    display: none; /* 모바일 메뉴 열기 버튼 */
+}
+header .gnb ul li {
+    float: left;
+}
+header .gnb ul li a {
+    display: block; 
+    /* a가 인라인 요소라서 padding을 적용하기 위해서 */
+    padding: 19px;
+    color: #1D1D1D;
+    font-size: 20px;
+}
+@media screen and (max-width:640px){
+    header { /* header영역은 대부분 높이를 입력함 */
+        height: 50px;
+    }
+    header h1 {
+        margin: 9px 0 0 0;
+        /* h1태그에는 글자크기가 2배로 기본값이 들어가 있어서 모바일에서는 의도하지 않는 여백이 생성됨. 이를 삭제하기 위해서 글자크기를 삭제 */
+        font-size: 0; 
+        line-height: 0;
+    }
+    header a img {
+        width: 82px;
+    }
+    header .gnb {
+        margin: 14px 0 0 0;
+    }
+    header .gnb button {
+        display: block; /* 모바일 메뉴 열기 버튼 */
+    }
+    header .gnb button i {
+        color: #3D3D3D;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    header .gnb button span {
+        display: none;
+    }
+    header .gnb ul {
+        display: none; /* 모바일에서는 메뉴가 안나옴 */
+    }
+}
+
+.visual {
+    background-image: url(../images/visual_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+.visual h2 {
+    display: none; 
+    /* 해당 태그를 사용하지 않은 것처럼 숨김 - 공간을 차지하지 않음 */
+}
+.visual strong {
+    display: block; 
+    /* strong 인라인태그라서 margin이 적용 X, block요소로 변경 */
+    padding: 228px 0 10px 0;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+}
+.visual p {
+    color: #FFFFFF;
+    line-height: 1.2;
+    font-size: 50px;
+}
+.visual p em {
+    font-weight: 700;
+}
+
+@media screen and (max-width:640px){
+    .visual {
+        background-size: cover;
+        height: 395px;
+        text-align: center;
+    }
+    .visual strong {
+        padding: 145px 0 5px 0;
+        font-size: 13px;
+    }
+    .visual p {
+        font-size: 20px;
+    }
+}
+
+.promotion .art {
+    margin: 154px 0 100px 0;
+}
+.promotion .art img {
+    float: left;
+}
+.promotion .art .inner {
+    float: left;
+    margin: 63px 0 0 80px;
+}
+.promotion .lee {
+    margin: 0 0 146px 0;
+}
+/* 두 요소에 float:right를 주면 코딩순서와 역순으로 요소들이 오른쪽에 정렬 */
+.promotion .lee img {
+    float: right;
+}
+.promotion .lee .inner {
+    float: right;
+    margin: 63px 80px 0 0;
+}
+.promotion h2 {
+    color: #1D1D1D;
+    font-size: 50px;
+    font-weight: 700;
+}
+.promotion p {
+    margin: 17px 0 46px 0;
+}
+.promotion p strong {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.promotion a {
+    display: inline-block;
+    padding: 6px 21px;
+    margin: 0 5px 0 0;
+    border: 1px solid #666666;
+}
+
+@media screen and (max-width:640px){
+    .promotion .art {
+        margin: 50px 0 40px 0;
+    }
+    .promotion .art img {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .promotion .art .inner {
+        float: none;
+        margin: 10px 0 0 0;
+    }
+    .promotion .lee {
+        margin: 0 0 60px 0;
+    }
+    .promotion .lee img {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .promotion .lee .inner {
+        float: none;
+        margin: 10px 0 0 0;
+    }
+    .promotion h2 {
+        font-size: 18px;
+    }
+    .promotion p {
+        margin: 0 0 20px 0;
+    }
+    .promotion p strong {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .promotion p span {
+        display: none;
+    }
+    .promotion a {
+        padding: 4px 9px;
+    }
+}
+
+.bbs {
+    background-image: url(../images/bbs_bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.bbs .notice {
+    /* notice 글자는 대부분 흰색 - 내부요소에 스타일을 상속 */
+    color: #FFFFFF;
+}
+.bbs .notice .tit {
+    float: left;
+    margin: 87px 0 0 0;
+}
+.bbs .notice .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.bbs .notice .tit a {
+    display: inline-block;
+    padding: 6px 21px;
+    border: 1px solid #FFFFFF;
+}
+.bbs .notice .tit a i {
+    display: none;
+}
+.bbs .notice .tit p {
+    margin: 10px 0 22px 0;
+}
+.bbs .notice ul {
+    float: right;
+    width: 770px;
+    margin: 100px 0 0 0;
+}
+.bbs .notice ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.bbs .notice ul li:first-child {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.bbs .notice ul li a {
+    display: block;
+    padding: 15px 25px 15px 17px;
+}
+.bbs .notice ul li a strong {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* 제목의 길이가 너무 길면 자르기 */
+    margin-right: 100px; /* 오른쪽에 날짜가 들어갈 정도의 여백을 줌 */
+    font-size: 20px;
+    font-weight: 400;
+}
+.bbs .notice ul li a span {
+    float: right;
+    margin: 4px 0 0 0;
+    color: rgba(255,255,255,0.7);
+}
+.bbs .movie {
+    margin: 142px 0 0 0;
+}
+.bbs .movie h2 {
+    margin: 0 0 14px 0;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+}
+.bbs .movie ul li {
+    float: left;
+    width: 400px;
+    margin: 0 40px 0 0;
+}
+.bbs .movie ul li:last-child {
+    margin: 0;
+}
+.bbs .movie ul li a {
+    display: block;
+}
+.bbs .movie ul li a span {
+    display: block;
+    margin: 4px 0 3px 0;
+}
+.bbs .movie ul li a strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:640px){
+    .bbs {
+        background-size: auto 424px;
+    }
+    .bbs .notice .tit {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 24px 0 0 0;
+    }
+    .bbs .notice .tit h2 {
+        float: left;
+        font-size: 18px;
+    }
+    .bbs .notice .tit a {
+        float: right;
+        padding: 0;
+        border: 0;
+    }
+    .bbs .notice .tit a span {
+        display: none;
+    }
+    .bbs .notice .tit a i {
+        display: block;
+        font-size: 18px;
+    }
+    .bbs .notice .tit p {
+        display: none;
+    }
+    .bbs .notice ul {
+        float: none;
+        width: auto;
+        margin: 12px 0 0 0;
+    }
+    .bbs .notice ul li a {
+        padding: 15px 0 15px 0;
+    }
+    .bbs .notice ul li a strong {
+        margin-right: 80px;
+        font-size: 13px;
+    }
+    .bbs .notice ul li a span {
+        margin: 0;
+    }
+    .bbs .movie {
+        margin: 72px 0 0 0;
+    }
+    .bbs .movie h2 {
+        font-size: 18px;
+    }
+    .bbs .movie ul li {
+        float: none;
+        display: none;
+        width: auto;
+        margin: 0;
+    }
+    .bbs .movie ul li:first-child {
+        display: block;
+    }
+    .bbs .movie ul li a img {
+        width: 100%;
+    }
+    .bbs .movie ul li a strong {
+        font-size: 15px;
+    }
+}
+
+footer {
+    overflow: hidden; /* footer하단에 생성된 의도하지 않은 여백 삭제를 위해 */
+    margin: 80px 0 0 0;
+    background-color: #0A0A0A;
+    color: rgba(255,255,255,0.8);
+}
+footer .family {
+    float: right;
+    margin: 65px 0 0 0;
+}
+footer .family button {
+    /* button태그에 넓이와 높이를 주면 글자가 좌우에 가운데 위아래 가운데 정렬됨 */
+    width: 160px;
+    height: 37px;
+    padding: 0 12px 0 14px;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+footer .family button strong {
+    float: left;
+    font-weight: 400;
+}
+footer .family button span {
+    float: right;
+}
+footer .inner {
+    float: left;
+    margin: 54px 0 64px 0;
+}
+footer .fnav li {
+    float: left;
+}
+footer .fnav li a {
+    display: block;
+    padding: 0 28px 0 0;
+}
+footer .fnav li.privacy a {
+    /* li중에서 privacy라는 클래스명을 갖은 li의 내부에 있는 a */
+    padding-left: 0;
+    font-weight: 700;
+}
+footer .info {
+    margin: 19px 0 5px 0;
+}
+footer .info address {
+    display: inline;
+    margin: 0 24px 0 0;
+}
+footer .info span {
+    display: inline-block;
+    margin: 0 24px 0 0;
+}
+
+@media screen and (max-width:640px){
+    footer {
+        overflow: hidden; /* footer하단에 생성된 의도하지 않은 여백 삭제를 위해 */
+        margin: 45px 0 0 0;
+    }
+    footer .family {
+        float: none;
+        margin: 17px 0 0 0;
+    }
+    footer .family button {
+        /* button태그에 넓이와 높이를 주면 글자가 좌우에 가운데 위아래 가운데 정렬됨 */
+        width: 123px;
+        height: 26px;
+        padding: 0 6px 0 7px;
+    }
+    footer .inner {
+        float: none;
+        margin: 12px 0 25px 0;
+    }
+    footer .info address {
+        display: block;
+    }
+    footer .fnav li a {
+        padding: 0 22px 0 0;
+    }
+    footer .info span {
+        margin: 0 22px 0 0;
+    }
+}
