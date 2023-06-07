@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+KR);
+/* main.css에 default.css 삽입 - 호출 */
+@import url(default.css);
+header  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+header h1 {
+    float: left;
+    margin: 29px 0 0 0;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    float: left;
+    margin: 13px 0 0 0;
+}
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    display: block;
+    padding: 20px 26px;
+    color: #fff;
+    font-size: 22px;
+}
+.visual {
+    position: relative;
+    border-radius: 0 0 200px 0;
+    height: 900px;
+    background-image: url(../images/visual_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.visual h2 {
+    padding: 270px 0 0 0;
+}
+.visual p {
+    margin: -40px 0 0 0;
+    color: rgba(255,255,255,0.6);
+    font-size: 25px;
+    letter-spacing: 0.18em;
+}
+.visual .studio {
+    position: absolute;
+    right: 200px;
+    bottom: -90px;
+}
+.visual .studio a {
+    display: block;
+    width: 180px;
+    height: 180px;
+    padding: 40px 0 0 0;
+    border-radius: 90px;
+    background-image: linear-gradient(to top, #03A0FF, #117AFF);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+}
+.visual .studio a i {
+    font-size: 30px;
+}
+.visual .studio a span {
+    display: block;
+    padding: 13px 0 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.daily .tit {
+    margin: 100px 0 19px 0;
+}
+.daily .tit h2 {
+    float: left;
+    color: #1D1D1D;
+    font-size: 50px;
+    font-weight: 700;
+}
+.daily .tit a {
+    float: right;
+    margin: 30px 0 0 0;
+}
+.daily .tit a i {
+    font-size: 15px;
+}
+.daily ul li {
+    float: left;
+    width: 290px;
+    margin-right: 40px;;
+}
+.daily ul li:last-child {
+    margin-right: 0;
+}
+.daily ul li a {
+    display: block;
+}
+.daily ul li a h3 {
+    margin: 15px 0 7px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tour .tit {
+    margin: 110px 0 19px 0;
+}
+.tour .tit h2 {
+    float: left;
+    color: #1D1D1D;
+    font-size: 50px;
+    font-weight: 700;
+}
+.tour .tit a {
+    float: right;
+    margin: 30px 0 0 0;
+}
+.tour .tit a i {
+    font-size: 15px;
+}
+.tour ul li {
+    float: left;
+    width: 240px;
+    margin-right: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.tour ul li:last-child {
+    margin-right: 0;
+}
+.tour ul li.tour1 {
+    width: 440px;
+    background-image: url(../images/tour_img01.png);
+}
+.tour ul li.tour2 {
+    background-image: url(../images/tour_img02.png);
+}
+.tour ul li.tour3 {
+    background-image: url(../images/tour_img03.png);
+}
+.tour ul li.tour4 {
+    background-image: url(../images/tour_img04.png);
+}
+.tour ul li a {
+    display: block;
+    height: 272px;
+    padding: 220px 0 0 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.rest {
+    margin: 143px 0 0 0;
+    height: 700px;
+    padding: 182px 0 0 0;
+    background-image: url(../images/rest_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.rest .tit {
+    float: left;
+}
+.rest .tit h2 {
+    margin: 0 0 15px 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+.rest .inner {
+    float: right;
+}
+.rest .notice {
+    float: left;
+    width: 400px;
+    height: 280px;
+    padding: 20px;
+    background-color: rgba(75, 86, 121, 0.65);
+    border-radius: 10px;
+}
+.rest .notice h3 {
+    margin: 0 0 35px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.rest .notice ul li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.rest .notice ul li a {
+    display: block;
+    line-height: 40px;
+}
+.rest .notice ul li a span {
+    float: right;
+    color: rgba(255,255,255,0.8);
+}
+.rest .notice ul li a strong {
+    display: block;
+    margin-right: 100px;
+    font-weight: 400;
+}
+
+.rest .banner {
+    float: left;
+    width: 420px;
+    margin-left: 20px;
+}
+.rest .banner ul li {
+    float: left;
+    margin: 0 0 20px 20px;
+    width: 190px;
+    height: 130px;
+    padding: 20px 20px 0 20px;
+    background-color: rgba(75, 86, 121, 0.65);
+    border-radius: 10px;
+}
+.rest .banner ul li strong {
+    display: block;
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.rest .banner ul li i {
+    display: block;
+    text-align: right;
+    font-size: 30px;
+    color: rgba(255,255,255,0.8);
+}
+
+footer {
+    padding: 48px 0 63px 0;
+    background-color: #21242D;
+    color: rgba(255,255,255,0.8);
+}
+footer .inner {
+    float: left;
+}
+footer .fnav ul li {
+    float: left;
+}
+footer .fnav ul li.privacy {
+    font-weight: 700;
+}
+footer .fnav ul li a {
+    display: block;
+    position: relative; /* after에 준 absolute의 정렬의 기준 */
+    padding: 14px;
+}
+footer .fnav ul li a::after {
+    display: block;
+    /* after를 감싸는 요소 a에 position 속성이 있기 때문에 
+       a를 기준으로 right 오른쪽 top 상단으로 정렬 */
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(255,255,255,0.3);
+    content: "";
+}
+footer .fnav ul li:first-child a {
+    padding-left: 0;
+}
+footer .fnav ul li:last-child a::after {
+    display: none; /* 숨김 */
+}
+footer .info {
+    margin: 15px 0;
+}
+footer .info address {
+    display: inline;
+}
+footer .copyright {
+    color: rgba(255,255,255,0.6);
+}
+footer .family {
+    float: right;
+}
+footer .family button {
+    width: 190px;
+    height: 40px;
+    padding: 0 7px 0 15px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background-color: transparent;
+    color: rgba(255,255,255,0.8);
+}
+footer .family button strong {
+    float: left;
+    font-weight: 400;
+}
+footer .family button i {
+    float: right;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgba(255,255,255,0.6);
+}
