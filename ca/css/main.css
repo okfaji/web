@@ -1,0 +1,122 @@
+@import url(default.css);
+
+.product {
+    padding: 118px 0 92px 0;
+    background-color: #1E1E1E;
+    color: #FFF;
+}
+.product .tit {
+    margin-bottom: 84px;
+    text-align: center;
+}
+.product .tit strong {
+    font-weight: 400;
+}
+.product .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.product .list ul li {
+    float: left;
+    margin: 0 40px 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product .list ul li:last-child {
+    margin: 0;
+}
+.product .list ul li.pro01 {
+    background-image: url(../images/product01.png);
+}
+.product .list ul li.pro02 {
+    background-image: url(../images/product02.png);
+}
+.product .list ul li.pro03 {
+    background-image: url(../images/product03.png);
+}
+.product .list ul li a {
+    display: block;
+    width: 400px;
+    height: 300px;
+    padding-top: 92px;
+    text-align: center;
+}
+.product .list ul li a strong {
+    display: block;
+    font-weight: 400;
+}
+.product .list ul li a h3 {
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.product .list ul li a span {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border: 2px solid #FFF;
+    line-height: 31px;
+}
+
+@media screen and (max-width:640px){
+    .product {
+        padding: 59px 0 35px 0;
+    }
+    .product .tit {
+        margin-bottom: 34px;
+        text-align: left;
+    }
+    .product .tit h2 {
+        font-size: 25px;
+    }
+    .product .list ul li {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+    .product .list ul li a {
+        width: auto;
+        height: 168px;
+        padding-top: 43px;
+    }
+    .product .list ul li a h3 {
+        margin: 0 0 4px 0;
+        font-size: 17px;
+    }
+    .product .list ul li a span {
+        width: 78px;
+        height: 25px;
+        line-height: 21px;
+    }
+}
+
+.brand {
+    height: 664px;
+    background-image: url(../images/brand_bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+.brand .inner {
+    padding: 125px 0 0 868px;
+}
+.brand h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+@media screen and (max-width:640px){
+    .brand {
+        height: 438px;
+    }
+    .brand .inner {
+        padding: 54px 0 0 0;
+    }
+    .brand h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
